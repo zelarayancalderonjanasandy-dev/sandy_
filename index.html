@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo Menú</title>
+  <style>
+    nav {
+      background-color:darkorchid;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: white;
+      padding: 10px 15px;
+      display: block;
+      text-decoration: none;
+    }
+
+    nav ul li:hover {
+      background-color: #444;
+    }
+
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #444;
+      min-width: 150px;
+      flex-direction: column;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li a:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a>
+      <ul>
+          <li><a href="#">Biografia</a></li>
+          <li><a href="#">Chat</a></li>
+          <li><a href="#">a cerca de mi</a></li>
+        </ul>
+      <li><a href="#">Nosotros</a>
+      <ul>
+          <li><a href="#">Biografia</a></li>
+          <li><a href="#">Chat</a></li>
+          <li><a href="#">a cerca de mi</a></li>
+        </ul>
+      <li>
+        <a href="#">Servicios</a>
+        <ul>
+          <li><a href="#">Diseño Web</a></li>
+          <li><a href="#">Desarrollo</a></li>
+          <li><a href="#">Marketing</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
